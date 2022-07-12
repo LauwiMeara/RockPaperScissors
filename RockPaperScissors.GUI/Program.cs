@@ -1,4 +1,4 @@
-namespace RockPaperScissors
+namespace RockPaperScissors.GUI
 {
     internal static class Program
     {

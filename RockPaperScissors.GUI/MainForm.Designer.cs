@@ -1,4 +1,4 @@
-﻿namespace RockPaperScissors
+﻿namespace RockPaperScissors.GUI
 {
     partial class MainForm
     {
@@ -29,13 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
-            // 
-            // timer
-            // 
-            this.timer.Interval = 10;
-            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // MainForm
             // 
@@ -44,12 +38,12 @@
             this.ClientSize = new System.Drawing.Size(978, 944);
             this.Name = "MainForm";
             this.Text = "Rock, Paper, Scissors";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Load += new System.EventHandler(this.OnLoad);
+            this.ClientSizeChanged += new System.EventHandler(this.OnClientSizeChanged);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer;
     }
 }

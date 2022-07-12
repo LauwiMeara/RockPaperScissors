@@ -1,6 +1,6 @@
-﻿namespace RockPaperScissors
+﻿namespace RockPaperScissors.Logic
 {
-    internal class Direction
+    public class Location
     {
         public int X { get; set; }
         public int Y { get; set; }
